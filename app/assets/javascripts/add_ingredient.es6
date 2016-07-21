@@ -27,12 +27,12 @@ SandwichrApp.addIngredientToSandwich = function (event) {
 		type: "POST",
 		url: `/api/sandwiches/${SandwichId}/ingredients/add`,
 		data: data,
-		success: SandwichrApp.updateFunk(IngredientName),
-		error: SandwichrApp.handleError,
+		success: updateFunk(IngredientName),
+		error: handleError,
 	});
 };
 
-SandwichrApp.updateFunk (ingredient) {
+function updateFunk (ingredient) {
 	console.log("Added ingredient successfully");
 	var show = `
 	<li> ${ingredient} </li>
@@ -50,7 +50,7 @@ SandwichrApp.updateFunk (ingredient) {
 	// $('.ingredient_list').append(show);
 };
 
-function SandwichrApp.handleError (err) {
+function handleError (err) {
 	console.log("You got error:", err.responseText);
 
 	`<div> The ingredient could not be added. Try again later! </div>`
