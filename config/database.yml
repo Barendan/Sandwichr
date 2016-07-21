@@ -25,3 +25,4 @@ production:
   <<: *default
   database: sandwichr_production
   password: <%= ENV['SANDWICHR_DATABASE_PASSWORD'] %>
+
