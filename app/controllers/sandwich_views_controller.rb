@@ -10,7 +10,7 @@ class SandwichViewsController < ApplicationController
 	def show
 		@sandwich = Sandwich.find(params[:id])
 		@allIngredients = Ingredient.all
-		@top_users = User.top_users
+		# @top_users = User.top_users
 
 		render :show
 	end

@@ -13,7 +13,13 @@ blt = Sandwich.create(name: "blt", bread_type: "Wheat")
 russian = Sandwich.create(name: "russian", bread_type: "White")
 
 
-tomato = Ingredient.create(name: "tomato", calories: 25)
-lettuce = Ingredient.create(name: "lettuce", calories: 15)
-ham = Ingredient.create(name: "ham", calories: 100)
-turkey = Ingredient.create(name: "turkey", calories: 90)
+Tomato = Ingredient.create(name: "Tomato", calories: 15)
+Lettuce = Ingredient.create(name: "Lettuce", calories: 10)
+Banana Pepper = Ingredient.create(name: "Banana Pepper", calories: 20)
+Turkey = Ingredient.create(name: "Turkey", calories: 90)
+Prosciutto = Ingredient.create(name: "Prosciutto", calories: 115)
+Ham = Ingredient.create(name: "Ham", calories: 100)
+Mayo = Ingredient.create(name: "Mayo", calories: 50)
+Spinach = Ingredient.create(name: "Spinach", calories: 10)
+Salami = Ingredient.create(name: "Salami", calories: 100)
+
