@@ -3,7 +3,8 @@ class IngredientsController < ApplicationController
 	def show
 		ingredient = Ingredient.find_by(id: params[:id])
 		unless ingredient
-		render json:  {error: "ingredient not found" }, status: 404
+		render json:  {error: "ingredient not found" }, 
+		  status: 404
 		return
 		end
 
@@ -29,7 +30,8 @@ class IngredientsController < ApplicationController
 
 	private
 	def ingredient_params
-		params.require(:ingredient).permit(:name, :calories)
+		params.require(:ingredient)
+		.permit(:name, :calories)
 	end
 
 end

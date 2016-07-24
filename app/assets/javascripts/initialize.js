@@ -12,5 +12,4 @@ $(document).on("turboLinks:load", function () {
 
 	SandwichrApp.kickOff();
 
-
 });

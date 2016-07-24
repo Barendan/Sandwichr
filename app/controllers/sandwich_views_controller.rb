@@ -15,8 +15,4 @@ class SandwichViewsController < ApplicationController
 		render :show
 	end
 
-	def home
-		
-	end
-
 end

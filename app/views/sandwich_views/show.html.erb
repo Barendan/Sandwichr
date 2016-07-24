@@ -1,11 +1,16 @@
-<h1>Sandwich details for: <%= @sandwich.name.capitalize %></h1>
+<h1>Sandwich details</h1>
+
+<h3 class="js-sandwich-id" data-sandwich-id="<%= @sandwich.id %>">
+	<%= @sandwich.name %>
+</h3>
+
 
 <p>Bread type: <%= @sandwich.bread_type %></p>
 <p>Total Calories: <%= @sandwich.total_calories %></p>
-<p>Ingredients: 
-	<ul class="ingredient_list">
+<p>Current Ingredients: 
+	<ul class="js-ingredient_list">
 	<% @sandwich.ingredients.each do |s| %>
-	<li class="updatedIngredient"><%= s.name.capitalize %> </li>
+	<li> <%= s.name.capitalize %> </li>
 	<% end %>
 	</ul>
 </p>
