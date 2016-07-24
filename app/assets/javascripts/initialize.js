@@ -8,7 +8,7 @@ SandwichrApp.kickOff = function () {
 };
 
 
-$(document).on("turboLinks:load", function () {
+$(document).on("turbolinks:load", function () {
 
 	SandwichrApp.kickOff();
 

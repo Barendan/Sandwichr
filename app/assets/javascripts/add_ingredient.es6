@@ -6,18 +6,13 @@ $(document).on("turbolinks:load", function () {
 
 
 SandwichrApp.addIngredientToSandwich = function (event) {
-	event.preventDefault;
-	// get button that was clicked from the event's currentTarget
 	var btn = event.currentTarget; 
 
 	var IngredientId = $(btn).data("ingredient-id");
 	var SandwichId = $(btn).data("sandwich-id");
 	var IngredientName = $(btn).data("ingredient-name");
 	
-	var data = {
-		sandwich_id: SandwichId,
-		ingredient_id: IngredientId,
-	};
+	var data = { ingredient_id: IngredientId };
 
 	$.ajax({
 		type: "POST",
@@ -30,6 +25,7 @@ SandwichrApp.addIngredientToSandwich = function (event) {
 
 SandwichrApp.updateFunk = function (response) {
 	console.log("Added ingredient successfully");
+	console.log(response);
 
 	var lastIndex = response.ingredients.length - 1;
 	var newIngredient = response.ingredients[lastIndex];
@@ -38,7 +34,7 @@ SandwichrApp.updateFunk = function (response) {
 	<li> ${newIngredient.name} </li>
 	`;
 	
-	$('.js-ingredient_list').append(show);
+	$('.js-ingredient-list').append(show);
 };
 
 SandwichrApp.handleError = function (err) {

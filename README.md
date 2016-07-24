@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Sandwichr
+A sandwich web application
+>>>>>>> 603500b36273681fc150f021a6c9f63f1b1e2bef

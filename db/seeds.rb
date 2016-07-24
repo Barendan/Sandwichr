@@ -15,7 +15,7 @@ russian = Sandwich.create(name: "russian", bread_type: "White")
 
 Tomato = Ingredient.create(name: "Tomato", calories: 15)
 Lettuce = Ingredient.create(name: "Lettuce", calories: 10)
-Banana Pepper = Ingredient.create(name: "Banana Pepper", calories: 20)
+BananaPepper = Ingredient.create(name: "Banana Pepper", calories: 20)
 Turkey = Ingredient.create(name: "Turkey", calories: 90)
 Prosciutto = Ingredient.create(name: "Prosciutto", calories: 115)
 Ham = Ingredient.create(name: "Ham", calories: 100)
